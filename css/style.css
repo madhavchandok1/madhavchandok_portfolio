@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
+
+:root{
+  --slate-blue: #0F172A;
+  --teal-blue:  rgb(94, 234, 213);
+  --teal-blue-light: rgba(94, 234, 213, 0.055);
+  --grey-white: rgba(167, 167, 167, 0.747);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--slate-blue);
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.white-color{
+  color:white;
+  font-weight: 600;
+}
+.cursor-glow {
+  position: absolute;
+  border-radius: 50%;
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(circle, rgba(29, 78, 216, 0.15) 0%, transparent 50%);
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease-out, opacity 0.2s ease-out;
+  opacity: 0;
+  z-index: 9999;
+}
+
+.main-container{
+  display: flex;
+  width: 100%;
+}
+
+.header{
+  float: left;
+  width: 35%;
+  font-size: xx-small;
+  padding-left: 200px;
+  margin: 40px 0 0 0;
+}
+
+#header-name{
+  color: white;
+  text-decoration: none;
+  font-size: large;
+  font-weight: 700;
+  margin: 30% 0 0 0;
+  padding: 0;
+  line-height: 0.4em;
+}
+
+#header-designation{
+  margin: -10px 0 0 0;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+#header-tagline{
+  font-size: 0.9em;
+  font-weight: 400;
+  color: rgb(207, 207, 207);
+}
+
+.header-link-container{
+  font-size: 0.8em;
+  font-weight: 600;
+  color: var(--grey-white);
+}
+
+.header-link{
+  text-decoration: none;
+  color: inherit;
+}
+
+.header-horizontal{
+  display: inline-block;
+  width: 25px;
+  height: 0.5px;
+  border-radius: 3px;
+  background-color: var(--grey-white);
+  margin-right: 5px;
+  vertical-align: middle;
+  transition: width 0.3s, background-color 0.3s;
+}
+
+.header-link-text{
+  transition: color 0.3s;
+}
+
+.header-link:hover .header-horizontal,
+.header-horizontal-active
+{
+  width: 50px; 
+  background-color: white;
+}
+
+.header-link:hover .header-link-text,
+.header-text-active{
+  color: white;
+}
+
+.header-social{
+  font-size: small;
+  margin-top: 170px;
+}
+
+.header-social-link{
+  text-decoration: none;
+  color: var(--grey-white);
+  padding-right: 10px;
+  transition: ease-in-out 0.3s, color 0.3s;
+}
+
+.header-social-link:hover{
+  color: white;
+  transition: ease-in-out 0.3s, color 0.3s;
+}
+
+.content{
+  border-left: white solid 0.5px;
+  float: left;
+  width: 75%;
+  margin: 35px 50px 0 20px;
+  font-size: xx-small;
+  align-items: left;
+}
+
+#about{
+  width: 65%;
+  align-items: middle;
+  margin-left: 40px;
+}
+
+#about h3{
+
+  font-size: large;
+  color: var(--teal-blue);
+}
+
+#about p{
+  font-size: 0.9em;
+  font-weight: 500;
+  text-align: justify;
+  line-height: 1.8;
+  color: var(--grey-white);
+}
+
